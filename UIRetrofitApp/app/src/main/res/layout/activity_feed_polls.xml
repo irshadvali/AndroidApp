@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feed_polls"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.irshad.uiretrofitapp.adapter.VerticalViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vPager"
+        android:visibility="visible"
+        android:background="@drawable/grey_wht_border"
+        android:layout_marginBottom="60dp">
+
+    </com.irshad.uiretrofitapp.adapter.VerticalViewPager>
+    <FrameLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        >
+    </FrameLayout>
+
+</RelativeLayout>

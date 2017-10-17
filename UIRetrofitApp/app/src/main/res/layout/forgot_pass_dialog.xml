@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_wht_border">
+
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Check your email!"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="we've sent you instructions\n on how to change your password"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submitBtn"
+        android:layout_below="@+id/textContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Ok, I'll check"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green_color"/>
+
+    </RelativeLayout>
+</RelativeLayout>

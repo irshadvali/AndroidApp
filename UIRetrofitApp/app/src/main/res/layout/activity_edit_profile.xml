@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.irshad.uiretrofitapp.EditProfile"
+    android:background="#F4f4f4">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/green_color"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_vec_ico"
+            android:scaleType="centerInside"
+            android:id="@+id/forgotBackBtn"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Edit Profile"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F4f4f4">
+
+
+    <RelativeLayout
+        android:id="@+id/profile_img_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/images"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_centerVertical="true"
+           />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_edit_circle"
+            android:id="@+id/editImage"
+            android:layout_alignEnd="@+id/profile_image"
+            android:layout_marginTop="100dp"
+            />
+
+    </RelativeLayout>
+            <View
+                android:id="@+id/viewone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"
+                android:layout_below="@+id/profile_img_lay"
+                android:layout_marginTop="10dp"></View>
+
+            <LinearLayout
+        android:id="@+id/full_name_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/viewone"
+        android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/two_zero_three"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/imageView6" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="top"
+                        android:hint="Full Name"
+                        android:textColor="#4d4d4d"
+                        android:textColorHighlight="#4d4d4d"
+                        android:textColorHint="#4d4d4d" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+    <View
+        android:id="@+id/viewtwo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"
+        android:layout_below="@+id/full_name_lay"
+       ></View>
+    <LinearLayout
+        android:id="@+id/about_lay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/viewtwo">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/two_zero_two"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageView3" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="1dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/aboutme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="top"
+                android:hint="About me"
+                android:textColor="#4d4d4d"
+                android:textColorHighlight="#4d4d4d"
+                android:textColorHint="#4d4d4d" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/viewthree"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"
+        android:layout_below="@+id/about_lay"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/locaton_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/viewthree"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/two_zero_one"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Bangalore"
+            android:textColorHint="#4d4d4d"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="17dp"
+            android:id="@+id/textView5" />
+    </LinearLayout>
+    <View
+        android:id="@+id/viewfour"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"
+        android:layout_below="@+id/locaton_lay"
+        ></View>
+    <LinearLayout
+        android:id="@+id/website_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/viewfour"
+        android:layout_alignParentStart="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/two_zero_six"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imageView5" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="1dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/weblink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="top"
+                android:hint="Weblink"
+                android:textColor="#4d4d4d"
+                android:textColorHighlight="#4d4d4d"
+                android:textColorHint="#4d4d4d" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/viewfive"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"
+        android:layout_below="@+id/website_lay"
+        ></View>
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F4f4f4"
+        android:orientation="vertical"
+        android:layout_below="@+id/viewfive"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Save"
+            android:background="@drawable/save_btn"
+            android:id="@+id/textView7"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

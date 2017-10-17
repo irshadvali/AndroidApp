@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                >
+
+                <ImageView
+                    android:id="@+id/poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/images"
+                    android:layout_below="@+id/datetime"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Irshad Vali Commented:"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_one"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="10dp"
+                    android:text="Loern Ipsum dummy text"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txt_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Today, we practiced identifying our Lesson 6 spelling words in text.  Then we have the opportunities to discuss what follows our pattern and what does not follow our pattern."
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:layout_alignBottom="@+id/poster"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:background="#80000000"
+                    />
+
+                <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Yesterday at 12:20 PM"
+                    android:textColor="#666"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/txt_two"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

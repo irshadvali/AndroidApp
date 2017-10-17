@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/grey_wht_border"
+       android:paddingTop="10dp"
+        android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:id="@+id/from_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/two_zero_four"
+            android:id="@+id/imageView4"
+            android:layout_marginBottom="2dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Select from gallery"
+            android:textColor="#666"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textView8"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"></View>
+    <LinearLayout
+        android:id="@+id/from_camera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/two_zero_five"
+            android:id="@+id/camera"
+            android:padding="5dp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Take new photo"
+            android:textColor="#666"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/cameratxt"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

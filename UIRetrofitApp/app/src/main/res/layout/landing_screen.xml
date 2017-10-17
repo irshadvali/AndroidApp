@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:padding="10dp">
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/app_title"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/slogan_txt"
+        android:layout_below="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_moto"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/loginGoogleSingInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Continue with Google"
+            android:textColor="@color/white"
+            android:background="@drawable/google_btn_bg"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_below="@+id/loginGoogleSingInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/loginFacebookSingInBtn"
+            android:textSize="16sp"
+            android:text="Continue with Facebook"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:background="@drawable/facebook_btn_bg"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp">
+
+        <Button
+            android:id="@+id/loginSignUpBtn"
+            android:layout_width="0dp"
+            android:height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/signup_btn_bg"/>
+
+        <Button
+            android:id="@+id/loginSignInBtn"
+            android:layout_width="0dp"
+            android:height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:text="Sign In"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/signinn_btn_bg"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/footer_disc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView10"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
