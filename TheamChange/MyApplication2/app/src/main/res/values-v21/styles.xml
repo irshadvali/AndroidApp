@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FirstTheme">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:buttonStyle">@style/ButtonTextFirst</item>
+        <item name="colorPrimary">@color/colorPrimary_one</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_one</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark_one</item>
+
+    </style>
+
+    <style name="SecondTheme">
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:buttonStyle">@style/ButtonTextTwo</item>
+        <item name="colorPrimary">@color/colorPrimary_two</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_two</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark_two</item>
+    </style>
+
+    <style name="Thirdheme">
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:buttonStyle">@style/ButtonTextThree</item>
+        <item name="colorPrimary">@color/colorPrimary_three</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_three</item>
+    </style>
+
+    <style name="FourthTheme">
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:buttonStyle">@style/ButtonTextFour</item>
+        <item name="colorPrimary">@color/colorPrimary_four</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_four</item>
+    </style>
+
+    <style name="ButtonTextFirst" parent="@android:style/Widget.Button">
+        <item name="android:background">@color/colorPrimary_one</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">@color/colorPrimary_one</item>
+
+    </style>
+
+    <style name="ButtonTextTwo" parent="@android:style/Widget.Button">
+        <item name="android:background">@color/colorPrimary_two</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">@color/colorPrimary_two</item>
+    </style>
+
+    <style name="ButtonTextThree" parent="@android:style/Widget.Button">
+        <item name="android:background">@color/colorPrimary_three</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">@color/colorPrimary_three</item>
+    </style>
+
+    <style name="ButtonTextFour" parent="@android:style/Widget.Button">
+        <item name="android:background">@color/colorPrimary_four</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">@color/colorPrimary_four</item>
+    </style>
+
+    <!-- SVG color changed -->
+    <style name="BaubleRound">
+        <item name="bauble_round">#db486e</item>
+        <item name="outercolor">#b99f77</item>
+    </style>
+
+    <style name="BaubleSmall">
+        <item name="bauble_small">#22c7f7</item>
+    </style>
+
+    <style name="DefaultScene">
+        <item name="bauble_round">#fec758</item>
+        <item name="bauble_small">#f22424</item>
+        <item name="outercolor">#89b977</item>
+
+    </style>
+
+    <style name="BaubleRoundtwo">
+        <item name="bauble_round">#48db6d</item>
+        <item name="outercolor">#779fb9</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:padding="10dp"
+    tools:context="com.irshad.xelpmoc.themechangeapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_alignStart="@+id/button1"
+                android:layout_below="@+id/button1"
+                android:layout_marginTop="50dp"
+                android:text="Theme two" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2"
+                android:layout_below="@+id/button2"
+
+                android:layout_marginTop="50dp"
+                android:text="Theme Three" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/button3"
+                android:layout_alignStart="@+id/button3"
+                android:layout_below="@+id/button3"
+                android:layout_marginTop="50dp"
+                android:text="Theme four" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RelativeLayout
+                android:id="@+id/relay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="relative" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lilay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="linear" />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="50dp"
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="next"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
